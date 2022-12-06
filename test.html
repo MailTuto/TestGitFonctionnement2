@@ -8,19 +8,16 @@
 </head>
 <body>
       <!-- Page header with logo and tagline-->
-      <header class="py-5 bg-light border-bottom mb-4">
-            <div class="container">
-                <div class="text-center my-5">
-                    <h1 class="fw-bolder">Welcome {{user.username|upper}} to my Blog !</h1>
-                    <p class="lead mb-0">Ceci est dédié aux frameworks</p>
-                    {%if category%}
-                        <p>Articles concernant le langage {{category.name}}</p>
-                    {%endif%}
-                </div>
-            </div>
         <div class="container">
+            <div class="text-center my-5">
+                <h1 class="fw-bolder">Welcome {{user.username|upper}} to my Blog !</h1>
+                <p class="lead mb-0">Ceci est dédié aux frameworks</p>
+                {%if category%}
+                    <p>Articles concernant le langage {{category.name}}</p>
+                {%endif%}
+            </div>
         </div>
-    </header>
+
     <!-- Page content-->
     <div class="container">
         <div class="row">
@@ -93,6 +90,9 @@
                 </div>
             </div>
         </div>
-    </div>   
+    </div> 
+    <footer> 
+         copyright
+     </footer> 
 </body>
 </html>
